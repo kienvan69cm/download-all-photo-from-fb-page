@@ -1,7 +1,7 @@
 import requests
 import json
 uid = "474237566014673"
-access_token = "EAABsbCS1iHgBADE8dfz32w0SHbVQ2mGub5MaJZCR71I8gTgK7UkAsZA9q4vxZCwk8zDfqFKAYANnyBbyB1ZCNTuFheH8hkwhkifT2wAiI6g2IUrewAzRSIM2eZBBFGdBlFAx4SPxYPyim3h2dBFyIawZB2oPD79QecFjZBUpU8ITwZDZD"
+access_token = "EAABsbCS1iHgBAPqycePFfHlKg8Y7wWt8jtdXqLZBZBbZCpD8wvyLo1GAA8ESJKhZAoLKQ20KkGLfJU5hes7HGUXkwg6dbHZAe6prqZAQebCAkosZAbUnz2x0HeDV4DUrwShNgedvjNOypktbPPQfn27bZBMd4hMTCGTXkiIeuHllZBQZDZD'"
 url = "https://graph.facebook.com/"+uid + \
     "?fields=feed.limit(670)%7Bfull_picture%7D&access_token="+access_token
 data = json.loads(requests.get(url).text)
